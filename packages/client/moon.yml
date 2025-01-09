@@ -1,0 +1,13 @@
+type: 'application'
+language: 'typescript'
+
+project:
+  name: 'client'
+  description: 'Nuxt 4 ready client application.'
+  channel: '#moon'
+  owner: 'acme'
+  maintainers: ['t.vanherwijnen']
+
+tasks:
+  dev:
+    command: 'bun dev'

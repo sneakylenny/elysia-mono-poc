@@ -4,7 +4,15 @@ import type { Server } from '../../server/src/index'
 
 const client = treaty<Server>('localhost:3000/api/server')
 
-const { data: index } = await client.index.get()
+const result = ref(0)
+
+onMounted(() => {
+  const liveRng = client.rng.subscribe()
+
+  liveRng.subscribe((message) => {
+    result.value = message.data.randomNumber
+  })
+})
 </script>
 
 <template>
@@ -12,7 +20,7 @@ const { data: index } = await client.index.get()
     Hello Nuxt
 
     <div>
-      <pre v-text="index"></pre>
+      <pre v-text="result"></pre>
     </div>
   </div>
 </template>

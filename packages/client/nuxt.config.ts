@@ -5,16 +5,18 @@ export default defineNuxtConfig({
   },
   compatibilityDate: '2024-11-01',
   devtools: { enabled: true },
-  modules: [
-    'nuxt-proxy-request'
-  ],
+  modules: ['nuxt-proxy'],
   proxy: {
-    options: [{
+    options: {
       target: 'http://localhost:8000',
-      pathFilter: ['/api/server/**'],
+      ws: true,
+      changeOrigin: true,
       pathRewrite: {
-          '^/api/server': ''
-        }
-    }]
-  }
+        '^/api/server': '',
+      },
+      pathFilter: [
+        '/api/server',
+      ]
+    }
+  },
 })

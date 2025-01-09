@@ -1,6 +1,6 @@
 <script setup lang="ts">
 import { treaty } from '@elysiajs/eden';
-import type { Server } from '../../server/src/index'
+import type { Server } from '@my-monorepo/server'
 
 const client = treaty<Server>('localhost:3000/api/server')
 

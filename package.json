@@ -3,5 +3,8 @@
   "private": true,
   "workspaces": [
     "packages/*"
-  ]
+  ],
+  "scripts": {
+    "docker:up": "docker compose --project-directory ./ --env-file .env -f db/docker-compose.yml up"
+  }
 }

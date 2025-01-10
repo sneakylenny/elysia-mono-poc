@@ -8,7 +8,7 @@ export default defineNuxtConfig({
   modules: ['nuxt-proxy'],
   proxy: {
     options: {
-      target: 'http://localhost:8000',
+      target: 'http://localhost:8080',
       ws: true,
       changeOrigin: true,
       pathRewrite: {

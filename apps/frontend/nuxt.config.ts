@@ -5,7 +5,12 @@ export default defineNuxtConfig({
   },
   compatibilityDate: '2024-11-01',
   devtools: { enabled: true },
-  modules: ['nuxt-proxy'],
+  modules: ['nuxt-proxy', '@nuxt/eslint'],
+  eslint: {
+    config: {
+      stylistic: true
+    }
+  },
   proxy: {
     options: {
       target: 'http://localhost:8080',

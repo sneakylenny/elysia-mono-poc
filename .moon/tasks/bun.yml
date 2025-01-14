@@ -1,0 +1,34 @@
+tasks:
+  lint:
+    command:
+      - 'eslint'
+      # Support other extensions
+      # - '--ext'
+      # - '.js,.jsx,.ts,.tsx'
+      # Always fix and run extra checks
+      - '--fix'
+      - '--report-unused-disable-directives'
+      # Dont fail if a project has nothing to lint
+      - '--no-error-on-unmatched-pattern'
+      # Do fail if we encounter a fatal error
+      - '--exit-on-fatal-error'
+      # Run in current dir
+      - '.'
+    inputs:
+      # Source and test files
+      - 'src/**/*'
+      - 'app/**/*'
+      - 'layers/**/*'
+      - 'tests/**/*'
+      # Other config files
+      - '*.config.*'
+      # Project configs, any format, any depth
+      - '**/.eslintrc.*'
+      # Root configs, any format
+      - '/.eslintignore'
+      - '/.eslintrc.*'
+      # TypeScript support
+      - 'types/**/*'
+      - 'tsconfig.json'
+      - '/tsconfig.eslint.json'
+      - '/tsconfig.options.json'

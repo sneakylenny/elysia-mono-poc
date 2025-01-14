@@ -19,4 +19,4 @@ console.log(
   `🦊 Elysia is running at ${app.server?.hostname}:${app.server?.port}`,
 )
 
-export type Server = typeof app
+export type Backend = typeof app

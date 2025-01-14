@@ -1,5 +1,5 @@
 <script setup lang="ts">
-const { rng } = useServer()
+const { rng } = useBackend()
 
 const randomNumber = ref(0)
 

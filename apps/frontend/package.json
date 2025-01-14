@@ -1,5 +1,5 @@
 {
-  "name": "@my-monorepo/client",
+  "name": "@my-monorepo/frontend",
   "private": true,
   "type": "module",
   "scripts": {

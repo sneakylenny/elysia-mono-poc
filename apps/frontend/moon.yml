@@ -3,8 +3,8 @@ type: 'application'
 language: 'typescript'
 
 project:
-  name: 'client'
-  description: 'Nuxt 4 ready client application.'
+  name: 'frontend'
+  description: 'Nuxt 4 ready frontend application.'
   channel: '#moon'
   owner: 'acme'
   maintainers: ['t.vanherwijnen']

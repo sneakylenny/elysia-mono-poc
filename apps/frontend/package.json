@@ -21,6 +21,6 @@
   "devDependencies": {
     "elysia": "^1.2.10",
     "nuxt-proxy-request": "^2.1.0",
-    "@my-monorepo/backend": "workspace:*"
+    "@my-monorepo/gateway": "workspace:*"
   }
 }

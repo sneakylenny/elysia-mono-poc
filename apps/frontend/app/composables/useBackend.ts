@@ -1,6 +1,6 @@
 import { treaty } from '@elysiajs/eden'
-import type { Backend } from '@my-monorepo/backend'
+import type { Gateway } from '@my-monorepo/gateway'
 
-export const useBackend = () => {
-  return treaty<Backend>('/api/server', { keepDomain: true })
+export const useGateway = () => {
+  return treaty<Gateway>('/api/server', { keepDomain: true })
 }

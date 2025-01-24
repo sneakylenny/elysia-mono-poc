@@ -3,8 +3,8 @@ type: 'application'
 language: 'typescript'
 
 project:
-  name: 'backend'
-  description: 'Elysia backend server.'
+  name: 'gateway'
+  description: 'Elysia gateway server.'
   channel: '#moon'
   owner: 'acme'
   maintainers: ['t.vanherwijnen']
